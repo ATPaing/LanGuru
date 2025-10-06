@@ -1,0 +1,153 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: #a98646;
+}
+
+main {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper_body {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/images/worldmap.png);
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.parrot_img {
+    width: 110px;
+}
+
+.parrot_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.upper_body_text {
+    width: max-content;
+    height: max-content;
+}
+
+.upper_body_text__first {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #32CD32;
+}
+
+.upper_body_text__second {
+    color: #ffffff;
+    font-size: 0.75rem;
+}
+
+.lower_body, .answer_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d333c;
+    padding: 1em;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.answer_card {
+    gap: 1em;
+    display: none;
+}
+
+.lower_body__content_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    padding: 10px;
+}
+
+.translate_text_label, .answer_text_label,.answer_translation_label {
+    width: max-content;
+    margin-inline: auto;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1693f3;
+}
+
+.translate_text_input,.answer_text_original, .answer_card__content {
+    min-height:100px;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    background-color: #c4e2f9;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.select_language_label {
+    width: max-content;
+    margin-inline: auto;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1693f3;
+    margin-block: 1em;
+}
+
+.lan_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.lan_wrapper input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.lan_wrapper + .lan_wrapper {
+    margin-top: 5px;
+}
+
+.language_label {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.translate_button, .new_translation_button {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    background-color: #1693f3;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.translate_button:hover, .new_translation_button:hover {
+    background-color: #0f7bbf;
+}
+

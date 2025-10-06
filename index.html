@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanGuru</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="upper_body">
+            <div class="parrot_img" >
+                <img src="./assets/images/parrot.png" alt="parrot">
+            </div>
+            
+            <div class="upper_body_text">
+                <p class="upper_body_text__first">PollyGlot</p>
+                <p class="upper_body_text__second">Perfect Translation Every Time</p>
+            </div>
+        </div>
+        <div id="lower_body" class="lower_body">
+            <form id="lower_body__content_card" class="lower_body__content_form">
+                <label for="translate_text_input" class="translate_text_label">Text to translate 👇</label>
+                <textarea name="translate_text_input" id="translate_text_input" class="translate_text_input" placeholder="Enter text to translate"></textarea>
+                <label class="select_language_label">Select Language 👇</label>
+                <div class="french_lan lan_wrapper">
+                    <input type="radio" id="french" name="language" value="french">
+                    <label for="french" class="language_label">French</label>
+                    <img src="./assets/images/fr-flag.png" alt="">
+                </div>
+                <div class="spanish_lan lan_wrapper">
+                    <input type="radio" id="spanish" name="language" value="spanish">
+                    <label for="spanish" class="language_label">Spanish</label>
+                    <img src="./assets/images/sp-flag.png" alt="">
+                </div>
+                <div class="japanese_lan lan_wrapper">
+                    <input type="radio" id="japanese" name="language" value="japanese">
+                    <label for="japanese" class="language_label">Japanese</label>
+                    <img src="./assets/images/jpn-flag.png" alt="">
+                </div>
+                <button id="translate_button" class="translate_button" type="submit">
+                    Translate
+                </button>
+            </form>
+        </div>
+        <div id="answer_card" class="answer_card">
+            <p class="answer_text_label">Original Text 👇</p>
+            <p class="answer_text_original"></p>
+            <p class="answer_translation_label">Your Translation 👇</p>
+            <div class="answer_card__content">
+                <p class="answer_card__content_ans"></p>
+            </div>
+            <button id="start_over_btn" class="new_translation_button">Start Over</button>
+        </div>
+    </main>
+</body>
+<script src="./index.js" ></script>
+</html>
