@@ -29,9 +29,6 @@ form_card.addEventListener("submit", async (e) => {
 
     if (data) {
 
-
-
-
         lower_body.style.display = "none";
         answer_card.style.display = "flex";
         answer_text_original.textContent = originalText;
